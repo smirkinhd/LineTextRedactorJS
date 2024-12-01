@@ -5,7 +5,7 @@
 
 ## Ссылка на Codepen
 ```
-(https://codepen.io/smirkinhd/pen/dPboMMJ)
+https://codepen.io/smirkinhd/pen/dPboMMJ
 ```
 
 ![{23B01162-BAD6-41EB-9DE0-0BA607F05B57}](https://github.com/user-attachments/assets/5a8dc1c0-f05a-4567-bb77-70817cfa4978)
