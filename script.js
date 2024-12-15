@@ -9,15 +9,18 @@ sendBtn.addEventListener('click', () => {
     const inputText = textInput.value.trim();
     if (inputText) {
         textLines.push(inputText);
-        textInput.value = ''; // Очистить поле ввода
+        textInput.value = '';
+        previewArea.innerHTML = '<h3>Предпросмотр текста:</h3>';
     }
 });
 
 previewBtn.addEventListener('click', () => {
-    previewArea.innerHTML = '<h3>Предпросмотр текста:</h3>'; // Сброс содержимого
-    textLines.forEach(line => {
+    const inputText = textInput.value.trim();
+    previewArea.innerHTML = '<h3>Предпросмотр текста:</h3>';
+
+    if (inputText) {
         const lineElement = document.createElement('div');
-        lineElement.textContent = line; // Экранирует HTML
+        lineElement.textContent = inputText;
         previewArea.appendChild(lineElement);
-    });
+    }
 });
